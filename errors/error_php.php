@@ -6,4 +6,4 @@
 	$filepath = 'Filename: ' .$filepath;
 	$line = 'Line Number: ' .$line;
 
-	include 'json_common_error.php';
+	include 'common_error_template.php';

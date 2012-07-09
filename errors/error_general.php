@@ -2,4 +2,4 @@
 
 	$title = 'Error';
 	
-	include 'json_common_error.php';
+	include 'common_error_template.php';

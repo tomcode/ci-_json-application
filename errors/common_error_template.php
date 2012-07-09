@@ -38,10 +38,10 @@
 
 <h4>A PHP Error was encountered</h4>
 
-<p>Severity: <?php echo $severity; ?></p>
-<p>Message:  <?php echo $message; ?></p>
-<p>Filename: <?php echo $filepath; ?></p>
-<p>Line Number: <?php echo $line; ?></p>
+<p>Severity: <?php echo $error_obj->severity; ?></p>
+<p>Message:  <?php echo $error_obj->message; ?></p>
+<p>Filename: <?php echo $error_obj->filepath; ?></p>
+<p>Line Number: <?php echo $error_obj->line; ?></p>
 
 </div><?php
 

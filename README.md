@@ -3,7 +3,7 @@ ci-_json-application
 
 Blank CodeIgniter application for use as submodule.
 
-Requires a master repository such as [tomcode/ci-project][1].
+Requires a master repository such as [tomcode/ci-project][1].  
 Requires an additional submodule for the styling.
 
 Based on CodeIgniter 2.1.2.

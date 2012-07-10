@@ -1,5 +1,5 @@
-ci-_json-server
-===============
+ci-_json-application
+====================
 
 Blank CodeIgniter application for use as submodule.
 

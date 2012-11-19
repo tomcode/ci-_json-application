@@ -1,7 +1,7 @@
 <?php
 
 	// Normalize the different variables passed
-	
+
 	$error_obj->title = isset($title) ? $title : '';
 	$error_obj->heading = isset($heading) ? $heading : '';
 	$error_obj->message = isset($message) ? strip_tags($message) : '';
@@ -21,11 +21,11 @@
 
 
 	$is_ajax = false;
-	
+
 	if(isset($_SERVER['HTTP_X_REQUESTED_WITH']))
 	{
 		$http_x_requested_with = filter_var($_SERVER['HTTP_X_REQUESTED_WITH']);
-		
+
 		$is_ajax = $http_x_requested_with === 'XMLHttpRequest';
 	}
 
@@ -34,16 +34,16 @@
 		header("Content-Type: application/json; charset=UTF-8", true);
 
 		echo json_encode($error_obj);
-		
+
 		exit;
 	}
-	
+
 	// Switch the error template for the (2) diffrent error outputs
-	
+
 	if(isset($error_obj->severity)) :
-	
+
 	// This is a PHP error
-	
+
 ?><div style="border:1px solid #990000;padding-left:20px;margin:0 0 10px 0;">
 
 <h4>A PHP Error was encountered</h4>

@@ -8,7 +8,7 @@ class Welcome extends CI_Controller {
 		(
 			'content' => $this->load->view('pages/index', false, true)
 		);
-		
+
 		$this->load->view('main_view', $data);
 	}
 }

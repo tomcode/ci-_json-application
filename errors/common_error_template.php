@@ -1,14 +1,23 @@
 <?php
 
-	// Normailze the different variables passed
+	// Normalize the different variables passed
 	
 	$error_obj->title = isset($title) ? $title : '';
 	$error_obj->heading = isset($heading) ? $heading : '';
 	$error_obj->message = isset($message) ? strip_tags($message) : '';
 
-	if(isset($severity) && $severity) $error_obj->severity = $severity;
-	if(isset($filepath) && $filepath) $error_obj->filepath = $filepath;
-	if(isset($line) && $line) $error_obj->line =  $line;
+	if(isset($severity) && $severity)
+	{
+		$error_obj->severity = $severity;
+	}
+	if(isset($filepath) && $filepath)
+	{
+		$error_obj->filepath = $filepath;
+	}
+	if(isset($line) && $line)
+	{
+		$error_obj->line =  $line;
+	}
 
 
 	$is_ajax = false;
@@ -29,6 +38,7 @@
 		exit;
 	}
 	
+	// Switch the error template for the (2) diffrent error outputs
 	
 	if(isset($error_obj->severity)) :
 	
@@ -46,7 +56,7 @@
 </div><?php
 
 	else :
-	
+
 	// The other errors 
 
 ?><html>
